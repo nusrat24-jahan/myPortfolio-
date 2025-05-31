@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #1e2a38;
+    padding: 20px 40px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  section {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .home {
+    background: #ecf0f1;
+    text-align: center;
+  }
+  
+  .home h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .about,
+  .projects,
+  .contact {
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .project {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+  }
+  
+  footer {
+    background: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .highlight {
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  .cursor {
+    display: inline-block;
+    background-color: #333;
+    width: 2px;
+    animation: blink 0.7s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      padding: 10px 0;
+    }
+  
+    section {
+      padding: 40px 20px;
+    }
+  
+    .home h2 {
+      font-size: 2em;
+    }
+  
+    .projects .project-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home h2 {
+      font-size: 1.6em;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .project {
+      padding: 15px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  

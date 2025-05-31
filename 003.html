@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nusrat's Portfolio</title>
+  <link rel="stylesheet" href="002.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Nusrat</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h2>Hi, I’m <span id="typed-name" class="highlight"></span><span class="cursor">|</span></h2>
+    <p>Welcome to my personal portfolio website!</p>
+  </section>
+
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>I’m a passionate Electrical Engineering student at NIT Kurukshetra, eager to build impactful projects using both hardware and software.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
+    <div class="project-list">
+      <div class="project">
+        <h4>Smart Light System</h4>
+        <p>An energy-saving light that turns on/off using motion detection.</p>
+      </div>
+      <div class="project">
+        <h4>Portfolio Website</h4>
+        <p>This personal portfolio site built using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact</h3>
+    <p>Email: yourname@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/nusrat</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Nusrat | All rights reserved.</p>
+  </footer>
+
+  <script>
+    const name = "Nusrat";
+    const typedName = document.getElementById("typed-name");
+
+    let i = 0;
+    function typeLetter() {
+      if (i < name.length) {
+        typedName.textContent += name.charAt(i);
+        i++;
+        setTimeout(typeLetter, 150);
+      }
+    }
+
+    window.onload = typeLetter;
+  </script>
+
+</body>
+</html>
