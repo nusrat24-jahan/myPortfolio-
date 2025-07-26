@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="002.css" />
 </head>
 <body>
-
+  
   <header>
     <nav>
       <div class="logo">Nusrat</div>
@@ -21,13 +21,22 @@
   </header>
 
   <section id="home" class="home">
-    <h2>Hi, I’m <span id="typed-name" class="highlight"></span><span class="cursor">|</span></h2>
+   
     <p>Welcome to my personal portfolio website!</p>
   </section>
 
   <section id="about" class="about">
     <h3>About Me</h3>
-    <p>I’m a passionate Electrical Engineering student at NIT Kurukshetra, eager to build impactful projects using both hardware and software.</p>
+
+    <p>Hi, I’m Nusrat, and I come from a small town with big dreams. Right now, I’m pursuing Electrical Engineering at NIT Kurukshetra. I’ve always been passionate about technology, and my goal is to first achieve financial stability through it—and eventually, I want to work towards improving education in villages.
+    I’m an introvert, but I’m very comfortable being by myself. That doesn't mean I’m not ambitious—actually, I’m quite determined. I chose NIT Kurukshetra because of its academic strength and its proximity to Delhi, which I feel gives me better exposure to tech opportunities and startup culture.
+      I enjoy learning new things. I’ve started getting into programming, electronics, video editing, and web development, and I want to use college as a platform to build real skills. I also have a creative side—when I’m stressed, I like to draw, especially scenes from my childhood or imaginary, dreamy landscapes with colorful skies. It really helps me relax.
+      I’m not someone who chases things just for status. For me, knowledge matters, and I want to deeply understand what I’m learning. Whether it’s physics, circuits, or anything technical, I like diving in and figuring things out.
+      To be honest, I did face confusion at one point—choosing between NIT Kurukshetra and NIT Bhopal—but I trusted my research and instinct. I believe it’s not about where you are, but how much effort you’re willing to put in. And I’m ready to give it my all.
+      In the long run, I want to build, innovate, and solve real-world problems—and once I’ve made my mark in the tech world, I want to give back, especially by helping improve the quality of education in rural areas.
+       That’s the kind of future I’m working towards.
+      
+      </p>
   </section>
 
   <section id="projects" class="projects">
@@ -54,21 +63,6 @@
     <p>© 2025 Nusrat | All rights reserved.</p>
   </footer>
 
-  <script>
-    const name = "Nusrat";
-    const typedName = document.getElementById("typed-name");
-
-    let i = 0;
-    function typeLetter() {
-      if (i < name.length) {
-        typedName.textContent += name.charAt(i);
-        i++;
-        setTimeout(typeLetter, 150);
-      }
-    }
-
-    window.onload = typeLetter;
-  </script>
-
+  
 </body>
 </html>

@@ -6,15 +6,15 @@
   
   body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f9f9f9;
+    background: #3B3B1A;
     color: #333;
     line-height: 1.6;
   }
   
   header {
-    background: #1e2a38;
+    background: #E7EFC7;
     padding: 20px 40px;
-    color: white;
+    color: #8A784E;
   }
   
   .logo {
@@ -53,7 +53,7 @@
   }
   
   .home {
-    background: #ecf0f1;
+    background: #AEC8A4;
     text-align: center;
   }
   
@@ -65,7 +65,8 @@
   .about,
   .projects,
   .contact {
-    background: white;
+    background: #AEC8A4;
+    background: #;
     margin-top: 20px;
     border-radius: 8px;
     padding: 40px;
@@ -82,7 +83,7 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: #fafafa;
+    background: #E7EFC7;
   }
   
   footer {
